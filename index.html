@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EDV371WJP3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-EDV371WJP3');
+</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TickerClash — Fantasy Football, but for the Stock Market</title>
+<meta name="description" content="Draft real stocks. Compete in 1v1 duels and full leagues. Zero real money at risk." />
+
+<!-- OG / social -->
+<meta property="og:title" content="TickerClash — Fantasy Football, but for the Stock Market" />
+<meta property="og:description" content="Draft real stocks. Compete in 1v1 duels and full leagues. Zero real money at risk." />
+<meta property="og:image" content="https://tickerclash.com/img/app-icon.jpeg" />
+<meta property="og:url" content="https://tickerclash.com/" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+<link rel="shortcut icon" href="favicon.ico" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Geist:wght@300..800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css" />
+
+<!-- Canonical -->
+<link rel="canonical" href="https://tickerclash.com/" />
+
+<!-- Robots -->
+<meta name="robots" content="index,follow,max-image-preview:large" />
+
+<!-- Twitter card metadata -->
+<meta name="twitter:title" content="TickerClash — Fantasy Football, but for the Stock Market" />
+<meta name="twitter:description" content="Draft real stocks. Compete in 1v1 duels and full leagues. Zero real money at risk." />
+<meta name="twitter:image" content="https://tickerclash.com/img/app-icon.jpeg" />
+<meta name="twitter:site" content="@TickerClashapp" />
+
+<!-- Theme color for mobile browser chrome -->
+<meta name="theme-color" content="#000000" />
+
+<!-- Structured data: app + organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "TickerClash",
+  "operatingSystem": "iOS, Android",
+  "applicationCategory": "GameApplication",
+  "description": "Fantasy Football, but for the stock market. Draft real tickers, go long or short, and compete in duels or leagues with zero real money at risk.",
+  "url": "https://tickerclash.com/",
+  "image": "https://tickerclash.com/img/app-icon.jpeg",
+  "installUrl": "https://apps.apple.com/us/app/tickerclash/id6761390811",
+  "downloadUrl": ["https://apps.apple.com/us/app/tickerclash/id6761390811", "https://play.google.com/store/apps/details?id=com.tickerclash.app"],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "TickerClash",
+  "url": "https://tickerclash.com/",
+  "logo": "https://tickerclash.com/img/app-icon.jpeg",
+  "sameAs": [
+    "https://x.com/TickerClashapp",
+    "https://www.tiktok.com/@tickerclashapp",
+    "https://www.instagram.com/tickerclash"
+  ]
+}
+</script>
+</head>
+<body class="grain antialiased">
+
+<!-- LIVE TICKER -->
+<div class="ticker-band">
+  <div class="ticker-track">
+    <span class="px-6">● LIVE MARKET</span>
+    <span class="px-6">AAPL <span class="up">+2.34%</span></span>
+    <span class="px-6">TSLA <span class="dn">-1.82%</span></span>
+    <span class="px-6">NVDA <span class="up">+4.17%</span></span>
+    <span class="px-6">MSFT <span class="up">+0.93%</span></span>
+    <span class="px-6">AMZN <span class="dn">-0.44%</span></span>
+    <span class="px-6">GOOGL <span class="up">+1.56%</span></span>
+    <span class="px-6">META <span class="up">+3.21%</span></span>
+    <span class="px-6">AMD <span class="dn">-2.07%</span></span>
+    <span class="px-6">NFLX <span class="up">+1.88%</span></span>
+    <span class="px-6">COIN <span class="up">+5.43%</span></span>
+    <span class="px-6">JPM <span class="up">+0.62%</span></span>
+    <span class="px-6">DIS <span class="dn">-0.71%</span></span>
+    <span class="px-6">● LIVE MARKET</span>
+    <span class="px-6">AAPL <span class="up">+2.34%</span></span>
+    <span class="px-6">TSLA <span class="dn">-1.82%</span></span>
+    <span class="px-6">NVDA <span class="up">+4.17%</span></span>
+    <span class="px-6">MSFT <span class="up">+0.93%</span></span>
+    <span class="px-6">AMZN <span class="dn">-0.44%</span></span>
+    <span class="px-6">GOOGL <span class="up">+1.56%</span></span>
+    <span class="px-6">META <span class="up">+3.21%</span></span>
+    <span class="px-6">AMD <span class="dn">-2.07%</span></span>
+    <span class="px-6">NFLX <span class="up">+1.88%</span></span>
+    <span class="px-6">COIN <span class="up">+5.43%</span></span>
+    <span class="px-6">JPM <span class="up">+0.62%</span></span>
+    <span class="px-6">DIS <span class="dn">-0.71%</span></span>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="/" class="brand">
+    <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><path d="M4 22 L12 10 L18 18 L28 6" stroke="#00D37E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="28" cy="6" r="2.5" fill="#00D37E"/></svg>
+    <span class="serif">TickerClash</span>
+  </a>
+  <div class="nav-links">
+    <a href="#features">Features</a>
+    <a href="#app">The App</a>
+    <a href="#modes">Modes</a>
+    <a href="#ranks">Ranks</a>
+    <a href="#download">Download</a>
+  </div>
+  <a href="#download" class="nav-cta mono">GET&nbsp;THE&nbsp;APP&nbsp;↗</a>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg grid-bg"></div>
+  <div class="hero-glow"></div>
+
+  <div class="container hero-inner">
+    <div class="meta-row mono">
+      <span>ISSUE Nº 001 · THE COMPETITIVE STOCK MARKET</span>
+      <span class="hide-mobile">RESEARCH PREVIEW · 2026</span>
+    </div>
+
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="live-badge mono">
+          <span class="live-dot"></span>
+          <span>MARKET OPEN · DRAFTING LIVE</span>
+        </div>
+        <h1 class="serif hero-h1">
+          Fantasy<br/>
+          <span class="italic thin">Football,</span><br/>
+          but for the<br/>
+          <span class="accent">stock market.</span>
+        </h1>
+        <p class="hero-sub">
+          Draft real tickers. Go long or short. Battle friends in daily duels or run a full league season. Built on live market data — played with zero real money at risk.
+        </p>
+        <div class="cta-row">
+          <a href="https://apps.apple.com/us/app/tickerclash/id6761390811" target="_blank" rel="noopener" class="btn btn-primary mono">
+            DOWNLOAD FOR&nbsp;iOS <span>↗</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.tickerclash.app" target="_blank" rel="noopener" class="btn btn-ghost mono">GOOGLE&nbsp;PLAY <span>↗</span></a>
+        </div>
+        <p class="mono micro">FREE · NO&nbsp;BROKERAGE · NO&nbsp;REAL&nbsp;MONEY&nbsp;AT&nbsp;RISK</p>
+      </div>
+
+      <div class="hero-phone">
+        <div class="phone-label mono"><span class="live-dot red"></span>LIVE MATCH · YOU vs YAHOO</div>
+        <div class="iphone float">
+          <div class="iphone-screen">
+            <img src="img/duel.jpeg" alt="TickerClash live duel — you vs Yahoo" />
+          </div>
+        </div>
+        <div class="phone-caption mono">ACTUAL APP · NOT A MOCKUP</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- BY THE NUMBERS -->
+<section class="stats container-wide">
+  <div class="stats-grid">
+    <div><div class="stat-label mono">LIVE ON</div><div class="stat-val serif">iOS&nbsp;&amp;<br/><span class="accent">Android</span></div></div>
+    <div><div class="stat-label mono">MARKET DATA</div><div class="stat-val serif">Real-time</div></div>
+    <div><div class="stat-label mono">GAME MODES</div><div class="stat-val serif">Duels&nbsp;&amp;<br/>Leagues</div></div>
+    <div><div class="stat-label mono">REAL $ AT RISK</div><div class="stat-val serif italic accent">$0.00</div></div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-tag mono">§ 01 · THE PRODUCT</div>
+        <h2 class="serif section-h2">Everything you need to <span class="italic">compete.</span></h2>
+      </div>
+      <p class="section-kicker mono">Real market data. Real competition. No real money at stake — only pride, rank, and bragging rights.</p>
+    </div>
+
+    <div class="feat-grid">
+      <article class="feat">
+        <div class="feat-head">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <rect x="4" y="20" width="6" height="16" fill="#00D37E"/>
+            <rect x="14" y="12" width="6" height="24" fill="#00D37E" fill-opacity=".6"/>
+            <rect x="24" y="16" width="6" height="20" fill="#00D37E" fill-opacity=".4"/>
+            <path d="M4 10 L14 14 L24 8 L36 4" stroke="#F5F1EA" stroke-width="1.5" fill="none"/>
+            <circle cx="36" cy="4" r="2" fill="#F5F1EA"/>
+          </svg>
+          <span class="mono feat-num">01</span>
+        </div>
+        <h3 class="serif">Real Stock Data</h3>
+        <p>Live quotes, interactive charts, and intraday market data powered by Financial Modeling Prep. Every tick is real.</p>
+      </article>
+      <article class="feat">
+        <div class="feat-head">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <path d="M4 8 L36 8 M4 20 L36 20 M4 32 L36 32" stroke="#F5F1EA" stroke-width="1.2" stroke-dasharray="2 3"/>
+            <circle cx="8" cy="8" r="3" fill="#00D37E"/>
+            <circle cx="20" cy="8" r="3" fill="#F5F1EA"/>
+            <circle cx="32" cy="20" r="3" fill="#00D37E"/>
+            <circle cx="20" cy="20" r="3" fill="#F5F1EA"/>
+            <circle cx="8" cy="32" r="3" fill="#00D37E"/>
+            <circle cx="20" cy="32" r="3" fill="#F5F1EA"/>
+          </svg>
+          <span class="mono feat-num">02</span>
+        </div>
+        <h3 class="serif">Snake Draft</h3>
+        <p>Draft your portfolio live against friends. 60-second pick timer, auto-queue, and a draft room that feels like game day.</p>
+      </article>
+      <article class="feat">
+        <div class="feat-head">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <path d="M4 28 L14 20 L22 26 L36 10" stroke="#00D37E" stroke-width="2" fill="none"/>
+            <path d="M4 12 L14 18 L22 14 L36 30" stroke="#FF4D5E" stroke-width="2" fill="none" stroke-dasharray="3 3"/>
+          </svg>
+          <span class="mono feat-num">03</span>
+        </div>
+        <h3 class="serif">Long &amp; Short</h3>
+        <p>Bet on winners. Short the losers. Your thesis, your strategy — graded by the market itself.</p>
+      </article>
+      <article class="feat">
+        <div class="feat-head">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <path d="M20 4 L26 14 L36 16 L28 24 L30 34 L20 30 L10 34 L12 24 L4 16 L14 14 Z" fill="#00D37E" fill-opacity=".15" stroke="#00D37E" stroke-width="1.5"/>
+            <circle cx="20" cy="20" r="3" fill="#00D37E"/>
+          </svg>
+          <span class="mono feat-num">04</span>
+        </div>
+        <h3 class="serif">Ranked Tiers</h3>
+        <p>Climb from Bronze to Champion. Earn season points, read the leaderboard, and prove it on the scoreboard.</p>
+      </article>
+      <article class="feat">
+        <div class="feat-head">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <path d="M12 4 L24 4 L22 18 L32 18 L16 36 L18 22 L10 22 Z" fill="#00D37E"/>
+          </svg>
+          <span class="mono feat-num">05</span>
+        </div>
+        <h3 class="serif">Daily &amp; Weekly</h3>
+        <p>Quick Daily Duels for fast action. Weekly Wars for deeper strategy. A mode for every schedule.</p>
+      </article>
+      <article class="feat">
+        <div class="feat-head">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <circle cx="12" cy="14" r="5" stroke="#F5F1EA" stroke-width="1.5"/>
+            <circle cx="28" cy="14" r="5" stroke="#00D37E" stroke-width="1.5"/>
+            <path d="M4 34 C 4 26, 10 24, 12 24 C 14 24, 20 26, 20 34" stroke="#F5F1EA" stroke-width="1.5"/>
+            <path d="M20 34 C 20 26, 26 24, 28 24 C 30 24, 36 26, 36 34" stroke="#00D37E" stroke-width="1.5"/>
+          </svg>
+          <span class="mono feat-num">06</span>
+        </div>
+        <h3 class="serif">League Play</h3>
+        <p>Create or join a league. Round-robin matchups. Playoff brackets. A championship. The full fantasy sports arc.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- THE APP -->
+<section id="app" class="section section-alt app-section">
+  <div class="app-glow"></div>
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-tag mono">§ 02 · SEE IT IN ACTION</div>
+        <h2 class="serif section-h2">Built like a <span class="italic">broadcast.</span> Played like a <span class="italic">game.</span></h2>
+      </div>
+    </div>
+
+    <!-- Duel -->
+    <div class="showcase">
+      <div class="showcase-text order-2">
+        <div class="section-tag mono">FEATURE 01 · THE DUEL</div>
+        <h3 class="serif showcase-h3">Every pick is scored<br/>by the <span class="italic">real market.</span></h3>
+        <p>Each duel is a head-to-head match on a $10,000 paper portfolio. Go long on conviction. Short the overhyped. Watch live gains and losses tick against your opponent in real time — with the closing bell deciding the winner.</p>
+        <div class="mini-stats">
+          <div><div class="mono micro">STARTING</div><div class="serif big">$10,000</div></div>
+          <div><div class="mono micro">PICKS</div><div class="serif big">5</div></div>
+          <div><div class="mono micro">POSITIONS</div><div class="serif big">L / S</div></div>
+        </div>
+      </div>
+      <div class="showcase-phone order-1">
+        <div class="iphone">
+          <div class="iphone-screen"><img src="img/duel.jpeg" alt="You vs Yahoo live duel"/></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Draft -->
+    <div class="showcase reverse">
+      <div class="showcase-phone">
+        <div class="iphone">
+          <div class="iphone-screen"><img src="img/draft.jpeg" alt="Draft room with pick timer"/></div>
+        </div>
+      </div>
+      <div class="showcase-text">
+        <div class="section-tag mono">FEATURE 02 · THE DRAFT ROOM</div>
+        <h3 class="serif showcase-h3">60 seconds on the clock. <span class="italic">Your move.</span></h3>
+        <p>Snake draft your roster live against friends. Filter by sector, search any of 4,200+ tickers, queue auto-picks for when the Wi-Fi drops. It's the draft night buzz of fantasy football — with Bloomberg tickers instead of running backs.</p>
+        <ul class="tick-list">
+          <li>60-second pick timer per round</li>
+          <li>Auto-queue for missed picks</li>
+          <li>Sector filters — Tech, Health Care, Financials, +9 more</li>
+          <li>Full draft history &amp; replay</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Compete -->
+    <div class="showcase">
+      <div class="showcase-text order-2">
+        <div class="section-tag mono">FEATURE 03 · COMPETE HUB</div>
+        <h3 class="serif showcase-h3">Stats that matter. <span class="italic">Rank that earns.</span></h3>
+        <p>Track wins, win rate, and best single-week ROI. Watch your rank bar fill toward the next tier. Queue into Daily Duel, Weekly War, or Custom 1v1 Ranked straight from the hub.</p>
+        <div class="stat-cards">
+          <div><div class="mono micro">WINS</div><div class="serif big accent">55</div></div>
+          <div><div class="mono micro">WIN RATE</div><div class="serif big">51%</div></div>
+          <div><div class="mono micro">BEST ROI</div><div class="serif big gold">+56%</div></div>
+        </div>
+      </div>
+      <div class="showcase-phone order-1">
+        <div class="iphone">
+          <div class="iphone-screen"><img src="img/compete.jpeg" alt="Compete hub"/></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stock + League -->
+    <div class="dual-grid">
+      <div class="dual-card">
+        <div class="section-tag mono">FEATURE 04 · STOCK DETAIL</div>
+        <h3 class="serif dual-h3">Live charts. <span class="italic">Four ways to trade.</span></h3>
+        <p>Buy, Sell, Short, Cover — all in one screen. Intraday to multi-year charts. OPEN, HIGH, LOW, PREV CLOSE at a glance.</p>
+        <div class="iphone small">
+          <div class="iphone-screen"><img src="img/stock.jpeg" alt="Stock detail"/></div>
+        </div>
+      </div>
+      <div class="dual-card">
+        <div class="section-tag mono">FEATURE 05 · LEAGUE SEASON</div>
+        <h3 class="serif dual-h3">Full season. <span class="italic">Weekly matchups.</span></h3>
+        <p>Round-robin schedule, live win probabilities, playoff bracket, championship trophy. The fantasy arc you already love — with tickers.</p>
+        <div class="iphone small">
+          <div class="iphone-screen"><img src="img/league.jpeg" alt="League matchups"/></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODES -->
+<section id="modes" class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-tag mono">§ 03 · HOW IT PLAYS</div>
+        <h2 class="serif section-h2">Two ways to play. <span class="italic dim">Pick your fight.</span></h2>
+      </div>
+    </div>
+    <div class="modes-grid">
+      <article class="mode-card">
+        <div class="mode-head">
+          <span class="mono accent">MODE A</span>
+          <span class="mono dim">1v1 · RANKED</span>
+        </div>
+        <h3 class="serif mode-h3">Head-to-head <span class="italic">duels.</span></h3>
+        <p>Challenge any player. Pick stocks. Long or short. See who's right when the closing bell rings.</p>
+        <ul class="tick-list">
+          <li>Daily Duel — single trading day showdowns</li>
+          <li>Weekly War — five-day strategic battles</li>
+          <li>Direct 1v1 challenges to any player</li>
+          <li>Server-side matchmaking, instant pairing</li>
+          <li>Season points toward global leaderboard</li>
+        </ul>
+      </article>
+      <article class="mode-card">
+        <div class="mode-head">
+          <span class="mono accent">MODE B</span>
+          <span class="mono dim">LEAGUE · FULL SEASON</span>
+        </div>
+        <h3 class="serif mode-h3">Full season. <span class="italic">Real stakes.</span></h3>
+        <p>Create a league. Invite the group chat. Draft. Grind through the regular season. Fight for the championship.</p>
+        <ul class="tick-list">
+          <li>Snake draft with 60-second pick timer</li>
+          <li>Round-robin regular season</li>
+          <li>Playoff brackets &amp; a championship</li>
+          <li>Commissioner tools &amp; league settings</li>
+          <li>Weekly adds, drops, and trades</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-tag mono">§ 04 · THE SETUP</div>
+        <h2 class="serif section-h2">From download to <span class="italic">first win</span> in minutes.</h2>
+      </div>
+    </div>
+    <div class="steps-grid">
+      <div class="step"><div class="serif step-num">01</div><h3 class="serif">Sign up</h3><p>Email and username. No credit card. No brokerage. Ten seconds flat.</p></div>
+      <div class="step"><div class="serif step-num">02</div><h3 class="serif">Pick your stocks</h3><p>Build a portfolio from real tickers. Go long on conviction. Short the noise.</p></div>
+      <div class="step"><div class="serif step-num">03</div><h3 class="serif">Compete</h3><p>Enter a duel. Join a league. Scoring runs off live market performance.</p></div>
+      <div class="step"><div class="serif step-num">04</div><h3 class="serif">Climb</h3><p>Earn season points. Move up ranks. Chase Champion on the global leaderboard.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- RANKS -->
+<section id="ranks" class="section section-ranks">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="section-tag mono">§ 05 · THE LADDER</div>
+        <h2 class="serif section-h2">Five tiers. <span class="italic">One</span> Champion.</h2>
+      </div>
+      <p class="section-kicker mono">Every duel won moves you up. Every loss teaches you something. Seasons reset. Skill carries over.</p>
+    </div>
+
+    <div class="ranks-grid">
+      <div class="rank">
+        <svg width="64" height="72" viewBox="0 0 64 72" fill="none">
+          <path d="M32 2 L60 16 V48 L32 70 L4 48 V16 Z" fill="#4A3520" stroke="#7a5a3a" stroke-width="1.5"/>
+          <path d="M32 12 L50 22 V46 L32 58 L14 46 V22 Z" fill="#6B4A2E"/>
+          <text x="32" y="42" text-anchor="middle" font-family="JetBrains Mono" font-size="10" font-weight="700" fill="#F5F1EA">I</text>
+        </svg>
+        <div class="mono rank-tier">TIER 01</div>
+        <div class="serif rank-name">Bronze</div>
+        <div class="mono rank-pts">0 – 399 PTS</div>
+      </div>
+      <div class="rank">
+        <svg width="64" height="72" viewBox="0 0 64 72" fill="none">
+          <path d="M32 2 L60 16 V48 L32 70 L4 48 V16 Z" fill="#7a7d82" stroke="#a3a7ac" stroke-width="1.5"/>
+          <path d="M32 12 L50 22 V46 L32 58 L14 46 V22 Z" fill="#9ea2a7"/>
+          <text x="32" y="42" text-anchor="middle" font-family="JetBrains Mono" font-size="10" font-weight="700" fill="#0B0D0C">II</text>
+        </svg>
+        <div class="mono rank-tier">TIER 02</div>
+        <div class="serif rank-name">Silver</div>
+        <div class="mono rank-pts">400 – 899 PTS</div>
+      </div>
+      <div class="rank">
+        <svg width="64" height="72" viewBox="0 0 64 72" fill="none">
+          <path d="M32 2 L60 16 V48 L32 70 L4 48 V16 Z" fill="#b38a2e" stroke="#e2b64f" stroke-width="1.5"/>
+          <path d="M32 12 L50 22 V46 L32 58 L14 46 V22 Z" fill="#d4a53d"/>
+          <text x="32" y="42" text-anchor="middle" font-family="JetBrains Mono" font-size="10" font-weight="700" fill="#0B0D0C">III</text>
+        </svg>
+        <div class="mono rank-tier">TIER 03</div>
+        <div class="serif rank-name">Gold</div>
+        <div class="mono rank-pts">900 – 1,599 PTS</div>
+      </div>
+      <div class="rank">
+        <svg width="64" height="72" viewBox="0 0 64 72" fill="none">
+          <path d="M32 2 L60 16 V48 L32 70 L4 48 V16 Z" fill="#2e8fb3" stroke="#5fc1e0" stroke-width="1.5"/>
+          <path d="M32 12 L50 22 V46 L32 58 L14 46 V22 Z" fill="#4fb0d4"/>
+          <text x="32" y="42" text-anchor="middle" font-family="JetBrains Mono" font-size="10" font-weight="700" fill="#0B0D0C">IV</text>
+        </svg>
+        <div class="mono rank-tier">TIER 04</div>
+        <div class="serif rank-name">Diamond</div>
+        <div class="mono rank-pts">1,600 – 2,499 PTS</div>
+      </div>
+      <div class="rank rank-elite">
+        <div class="elite-tag mono">ELITE</div>
+        <svg width="64" height="72" viewBox="0 0 64 72" fill="none">
+          <path d="M32 2 L60 16 V48 L32 70 L4 48 V16 Z" fill="#0A2A1E" stroke="#00D37E" stroke-width="2"/>
+          <path d="M32 12 L50 22 V46 L32 58 L14 46 V22 Z" fill="#00D37E"/>
+          <text x="32" y="42" text-anchor="middle" font-family="JetBrains Mono" font-size="10" font-weight="700" fill="#0B0D0C">V</text>
+        </svg>
+        <div class="mono rank-tier accent">TIER 05</div>
+        <div class="serif rank-name">Champion</div>
+        <div class="mono rank-pts">2,500+ PTS</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PULL QUOTE -->
+<section class="pull-quote">
+  <div class="pull-track">
+    <span class="serif italic">Draft.</span>
+    <span class="serif">TRADE.</span>
+    <span class="serif italic">Compete.</span>
+    <span class="serif">WIN.</span>
+    <span class="serif italic">Draft.</span>
+    <span class="serif">TRADE.</span>
+    <span class="serif italic">Compete.</span>
+    <span class="serif">WIN.</span>
+    <span class="serif italic">Draft.</span>
+    <span class="serif">TRADE.</span>
+    <span class="serif italic">Compete.</span>
+    <span class="serif">WIN.</span>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="download" class="cta-section">
+  <div class="cta-grid-bg grid-bg"></div>
+  <div class="cta-glow"></div>
+  <div class="container cta-inner">
+    <div class="cta-grid">
+      <div class="cta-text">
+        <div class="section-tag mono">§ 06 · YOUR MOVE</div>
+        <h2 class="serif cta-h2">The market's already<br/><span class="italic">open.</span></h2>
+        <p>Grab the app. Pick your fight. See if you can beat the market — and your friends.</p>
+        <div class="cta-row">
+          <a href="https://apps.apple.com/us/app/tickerclash/id6761390811" target="_blank" rel="noopener" class="btn btn-primary mono">DOWNLOAD FOR&nbsp;iOS <span>↗</span></a>
+          <a href="https://play.google.com/store/apps/details?id=com.tickerclash.app" target="_blank" rel="noopener" class="btn btn-ghost mono">GOOGLE&nbsp;PLAY <span>↗</span></a>
+        </div>
+      </div>
+      <div class="cta-icon">
+        <div class="icon-glow"></div>
+        <img src="img/app-icon.jpeg" alt="TickerClash app icon" class="icon-img float"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="brand">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><path d="M4 22 L12 10 L18 18 L28 6" stroke="#00D37E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="28" cy="6" r="2.5" fill="#00D37E"/></svg>
+        <span class="serif">TickerClash</span>
+      </div>
+      <p>Fantasy football, but for the stock market. Compete with real market data. Zero real money at risk.</p>
+      <div class="footer-social mono">
+        <a href="https://x.com/TickerClashapp">X ↗</a>
+        <a href="https://tiktok.com/@tickerclashapp">TIKTOK ↗</a>
+        <a href="https://instagram.com/tickerclash">INSTAGRAM ↗</a>
+      </div>
+    </div>
+    <div>
+      <div class="mono footer-head">APP</div>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#app">The App</a></li>
+        <li><a href="#modes">Game Modes</a></li>
+        <li><a href="#ranks">Rankings</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="mono footer-head">LEGAL &amp; SUPPORT</div>
+      <ul>
+        <li><a href="terms-of-service.html">Terms of Service</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-disclaimer">
+    <div class="container">
+      <div class="mono footer-head">DISCLAIMER</div>
+      <p>TickerClash is a fantasy competition platform for entertainment and educational purposes only. Real stock data is used solely to simulate gameplay. No actual securities are bought, sold, or traded. TickerClash LLC is not a registered investment advisor, broker-dealer, or financial institution. Nothing in this app should be construed as financial or investment advice.</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-row mono">
+      <span>© 2026 TICKERCLASH LLC</span>
+      <span>LAS VEGAS · NEVADA</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
